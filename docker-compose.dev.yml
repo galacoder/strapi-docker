@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: strapi
       POSTGRES_DB: strapi
     ports:
-      - '5432:5432'
+      - '5442:5442'
 
   mysql:
     image: mysql:5
@@ -26,7 +26,7 @@ services:
     volumes:
       - mysqldata:/var/lib/mysql
     ports:
-      - '3306:3306'
+      - '3316:3316'
 
 volumes:
   pgdata:
